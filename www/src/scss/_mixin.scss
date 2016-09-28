@@ -1,0 +1,12 @@
+@mixin bgcolor($default){
+  background-color: $default;
+}
+
+@mixin bgheight($default){
+  height : $default;
+}
+
+@mixin bgwidth($default){
+  width : $default;
+}
+
