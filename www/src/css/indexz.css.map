@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,IAAI;EACF,SAAS,EAAE,IAAI;;;AAGjB,CAAC;EACC,eAAe,EAAE,IAAI;;;AAIrB,KAAE;EACA,UAAU,EAAE,IAAI;;;AAIpB,GAAG;EACD,MAAM,EAAC,IAAI;EACX,OAAO,EAAE,KAAK;;;AAGhB,CAAC;EACC,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC",
-"sources": ["../scss/_type.scss"],
-"names": [],
-"file": "indexz.css"
-}

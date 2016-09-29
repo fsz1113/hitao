@@ -1,0 +1,145 @@
+#join {
+  height: 145px;
+  background: #f5f5f5 url("../images/register/join-bgimg.jpg") no-repeat 220px 38px;
+  position: relative;
+}
+#join .welcome {
+  position: absolute;
+  top: 60px;
+  left: 390px;
+  line-height: 18px;
+}
+#join .already {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+#join .already span {
+  display: inline-block;
+  width: 72px;
+  height: 30px;
+  border: 1px solid #e10482;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+#join .already span a {
+  color: #e10482;
+}
+#join .already span:hover {
+  cursor: pointer;
+  background-color: #e10482;
+}
+#join .already span:hover a {
+  color: #ffffff;
+}
+
+#register {
+  height: 635px;
+  position: relative;
+  border-bottom: 1px solid #cccccc;
+  background: #ffffff url("../images/register/register-bgimg.jpg") no-repeat 240px 70px;
+}
+#register .confirm {
+  height: 250px;
+  width: 340px;
+  position: absolute;
+  top: 110px;
+  right: 40px;
+}
+#register .confirm .code {
+  width: 336px;
+  height: 46px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#register .confirm .code .left, #register .confirm .code .right, #register .confirm .code input {
+  float: left;
+}
+#register .confirm .code .left {
+  width: 78px;
+  height: 46px;
+  background-color: #f5f5f5;
+  border-right: 1px solid #cccccc;
+  color: #666666;
+  text-align: center;
+  line-height: 46px;
+}
+#register .confirm .code input {
+  border: none;
+  width: 137px;
+  height: 46px;
+  padding-left: 10px;
+}
+#register .confirm .code .right {
+  width: 110px;
+  height: 46px;
+  background-color: #cccccc;
+  cursor: pointer;
+  line-height: 46px;
+  text-align: center;
+  font-size: 24px;
+  color: #e10482;
+}
+#register .confirm .button {
+  position: absolute;
+  bottom: 0;
+  left: 127px;
+  width: 108px;
+  height: 40px;
+  background-color: #999999;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 15px;
+}
+#register .confirm .validation {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 340px;
+  height: 148px;
+  border-radius: 10px;
+}
+#register .confirm .validation .left, #register .confirm .validation input {
+  float: left;
+}
+#register .confirm .validation .nickname, #register .confirm .validation .psd, #register .confirm .validation .secondpsd {
+  width: 340px;
+  height: 46px;
+  border: 1px solid #cccccc;
+}
+#register .confirm .validation .secondpsd {
+  border-top: none;
+}
+#register .confirm .validation .left {
+  width: 78px;
+  height: 46px;
+  background-color: #f5f5f5;
+  border-right: 1px solid #cccccc;
+  color: #666666;
+  text-align: center;
+  line-height: 46px;
+}
+#register .confirm .validation input {
+  border: none;
+  width: 247px;
+  height: 46px;
+  padding-left: 10px;
+}
+
+#register .validation span {
+  display: block;
+  margin: 10px 5px 10px 20px;
+}
+#register .validation .rightSpan {
+  color: #00ff00;
+  font-size: 9px;
+}
+#register .validation .wrongSpan {
+  color: #ed0e8d;
+}
+
+/*# sourceMappingURL=register.css.map */

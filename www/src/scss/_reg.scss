@@ -1,0 +1,145 @@
+#join{
+  @include bgheight(145px);
+  background: #f5f5f5 url("../images/register/join-bgimg.jpg") no-repeat 220px 38px;
+  position: relative;
+  .welcome{
+    position: absolute;
+    top:60px;
+    left:390px;
+    line-height: 18px;
+  }
+  .already{
+    position: absolute;
+    top:50px;
+    right:50px;
+  }
+  .already span{
+    display: inline-block;
+    @include bgwidth(72px);
+    @include bgheight(30px);
+    border:1px solid #e10482;
+    border-radius: 15px;
+    text-align: center;
+    line-height:30px;
+    a{
+      color: #e10482;
+    }
+    &:hover{
+      cursor: pointer;
+      @include bgcolor(#e10482);
+      a{
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+#register{
+  @include bgheight(635px);
+  position: relative;
+  border-bottom: 1px solid #cccccc;
+  background: #ffffff url("../images/register/register-bgimg.jpg") no-repeat 240px 70px;
+  .confirm{
+    @include bgheight(250px);
+    @include bgwidth(340px);
+    position: absolute;
+    top:110px;
+    right:40px;
+  }
+  .confirm .code{
+    @include bgwidth(336px);
+    @include bgheight(46px);
+    border:1px solid #cccccc;
+    border-radius: 10px;
+    overflow: hidden;
+    .left,.right,input{
+      float: left;
+    }
+    .left{
+      @include bgwidth(78px);
+      @include bgheight(46px);
+      @include bgcolor(#f5f5f5);
+      border-right:1px solid #cccccc;
+      color: #666666;
+      text-align: center;
+      line-height: 46px;
+    }
+    input{
+      border:none;
+      @include bgwidth(137px);
+      @include bgheight(46px);
+      padding-left: 10px;
+    }
+    .right{
+      @include bgwidth(110px);
+      @include bgheight(46px);
+      @include bgcolor(#cccccc);
+      cursor: pointer;
+      line-height:46px;
+      text-align: center;
+      font-size: 24px;
+      color: #e10482;
+    }
+  }
+  .confirm .button{
+    position: absolute;
+    bottom: 0;
+    left:127px;
+    @include bgwidth(108px);
+    @include bgheight(40px);
+    @include bgcolor(#999999);
+    border:none;
+    color: #ffffff;
+    text-align: center;
+    line-height:40px;
+    border-radius:15px;
+  }
+  .confirm .validation {
+    display: none;
+    position: absolute;
+    top:0;
+    @include bgwidth(340px);
+    @include bgheight(148px);
+    border-radius: 10px;
+    .left,input {
+      float: left;
+    }
+    .nickname,.psd,.secondpsd{
+      @include bgwidth(340px);
+      @include bgheight(46px);
+      border: 1px solid #cccccc;
+    }
+    .secondpsd{
+      border-top: none;
+    }
+    .left {
+      @include bgwidth(78px);
+      @include bgheight(46px);
+      @include bgcolor(#f5f5f5);
+      border-right: 1px solid #cccccc;
+      color: #666666;
+      text-align: center;
+      line-height: 46px;
+    }
+    input {
+      border: none;
+      @include bgwidth(247px);
+      @include bgheight(46px);
+      padding-left: 10px;
+    }
+  }
+}
+
+#register .validation {
+  span{
+    display: block;
+    margin:10px 5px 10px 20px;
+  }
+  .rightSpan{
+    color: #00ff00;
+    font-size: 9px;
+  }
+  .wrongSpan{
+    color: #ed0e8d;
+  }
+}

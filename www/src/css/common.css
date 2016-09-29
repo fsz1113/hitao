@@ -1,0 +1,233 @@
+#container {
+  width: 1220px;
+  height: auto;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+
+#header {
+  width: 1220px;
+  height: 38px;
+  background: #fff url("../images/index/header-bgimg.jpg") no-repeat;
+}
+
+#header ul {
+  overflow: hidden;
+  float: right;
+  margin-top: 15px;
+}
+#header ul li {
+  float: left;
+  padding: 0 15px;
+  border-right: 1px solid #956695;
+}
+#header ul li img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#header ul li.first, #header ul li.last {
+  border: none;
+}
+#header ul li a {
+  color: #666666;
+}
+#header ul li a.last {
+  color: #e10482;
+}
+#header ul li a:hover {
+  color: #e10482;
+}
+
+#nav {
+  height: 106px;
+  background: #fff url("../images/index/nav-bgimg.jpg") no-repeat;
+  position: relative;
+}
+
+#nav .top {
+  width: 365px;
+  height: 45px;
+  padding-top: 5px;
+  float: right;
+}
+#nav .top ul {
+  margin-top: 5px;
+  overflow: hidden;
+}
+#nav .top ul li {
+  float: left;
+  padding: 0 5px;
+}
+#nav .top ul li img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#nav .top ul li a {
+  color: #000;
+}
+
+#nav .middle {
+  position: absolute;
+  right: 0;
+  top: 55px;
+  border: 2px solid #e10482;
+  width: 300px;
+  height: 30px;
+}
+#nav .middle input {
+  border: none;
+  float: left;
+  height: 30px;
+  width: 240px;
+  padding-left: 10px;
+}
+#nav .middle button {
+  border: none;
+  float: left;
+  background-color: #e10482;
+  height: 30px;
+  width: 50px;
+  color: #fff;
+}
+
+#nav .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 670px;
+  height: 50px;
+}
+
+#nav .bottom ul {
+  overflow: hidden;
+}
+#nav .bottom ul li {
+  float: left;
+  font-size: 15px;
+  padding: 16px 25px;
+}
+#nav .bottom ul li:hover {
+  border-bottom: 4px solid #e1007d;
+  color: #e1007d;
+  cursor: pointer;
+}
+#nav .bottom ul li img {
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+#nav .code {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  bottom: -115px;
+  left: 500px;
+}
+
+#aboutus {
+  height: 175px;
+  padding-top: 30px;
+  border-bottom: 1px solid #dddddd;
+  background-color: #fff;
+}
+#aboutus h2 {
+  color: #999999;
+  margin-bottom: 15px;
+}
+#aboutus ul {
+  float: left;
+  margin-left: 75px;
+  margin-right: 30px;
+}
+#aboutus ul a {
+  color: #000;
+  line-height: 22px;
+}
+#aboutus ul a:hover {
+  color: #de3d8d;
+}
+
+#footer {
+  height: 123px;
+  background-color: #fff;
+  padding-left: 15px;
+  padding-top: 25px;
+  position: relative;
+}
+#footer ul {
+  overflow: hidden;
+}
+#footer ul li {
+  float: left;
+  margin-right: 15px;
+}
+#footer ul li a {
+  color: #000;
+  font-weight: 900;
+}
+#footer ul li a:hover {
+  color: #e10583;
+}
+#footer p {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-size: 9px;
+  color: #999999;
+}
+#footer .ul2 li {
+  margin-right: 20px;
+}
+#footer .contact {
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  color: #e10482;
+  font-size: 18px;
+}
+#footer img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#help {
+  width: 35px;
+  height: 100%;
+  padding-top: 155px;
+  background-color: #000;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+#help p {
+  margin-left: 12px;
+  color: #fff;
+}
+#help .contact {
+  height: 120px;
+  background-color: #e10482;
+  margin-bottom: 5px;
+}
+#help .shopbag {
+  height: 95px;
+  background-color: #000;
+  padding-top: 20px;
+}
+#help .shopbag img {
+  margin-left: 10px;
+}
+#help .shopbag:hover {
+  background-color: #e10482;
+  cursor: pointer;
+}
+#help .toTop {
+  height: 30px;
+  width: 35px;
+  position: absolute;
+  bottom: 200px;
+}
+#help .toTop:hover {
+  background-color: #e10482;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=common.css.map */

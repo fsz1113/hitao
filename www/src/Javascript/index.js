@@ -117,27 +117,57 @@ $(function() {
     //#nav .bottom中的点击显示对应的页面内容(即滚动条的高度有变化)
     //$("#nav .bottom").children().eq(0)是ul,单击事件是其下的子元素
     $("#nav .bottom").children().eq(0).children().eq(0).click(function() {
-        $("body").animate({"scrollTop" : 0},800)
+        $("body,html").animate({"scrollTop" : 0},200)
     });
     $("#nav .bottom").children().eq(0).children().eq(1).click(function() {
-        $("body").animate({"scrollTop" : 543},800)
+        $("body,html").animate({"scrollTop" : 543},800)
     })
     $("#nav .bottom").children().eq(0).children().eq(2).click(function() {
-        $("body").animate({"scrollTop" : 1024},800)
+        $("body,html").animate({"scrollTop" : 1024},1600)
     })
     $("#nav .bottom").children().eq(0).children().eq(3).click(function() {
-        $("body").animate({"scrollTop" : 9540},800)
+        $("body,html").animate({"scrollTop" : 9540},4000)
+    })
+    $("#nav .bottom").children().eq(0).children().eq(4).click(function() {
+        $("body,html").animate({"scrollTop" : 10490},4500)
+    })
+    $("#nav .bottom").children().eq(0).children().eq(5).on("mouseenter mouseleave",function() {
+        $("#nav .code").fadeToggle();
     })
 
 
-    //#first-floor里的div鼠标移上透明度变化
+    //#first-floor,#third-floor里的div鼠标移上透明度变化
     $("#first-floor div").on("mouseover",function() {
-        $(this).stop().animate({opacity:0.5},500)
+        $(this).stop().animate({opacity:0.7},500)
     })
     $("#first-floor div").on("mouseout",function() {
             $(this).stop().animate({opacity:1},500)
     })
 
+    //#third-floor里的div鼠标移上透明度变化
+    $("#third-floor div").on("mouseover",function() {
+        $(this).find("img").stop().animate({opacity:0.7},500)
+    })
+    $("#third-floor div").on("mouseout",function() {
+        $(this).find("img").stop().animate({opacity:1},500)
+    })
 
+    //#fourth-floor里鼠标移上图片上移
+    $("#fourth-floor dl").on("mouseover",function() {
+        $(this).stop().animate({marginTop:"-30px"},500)
+    })
+    $("#fourth-floor dl").on("mouseout",function() {
+        $(this).stop().animate({marginTop:"0"},500)
+    })
 
+    //侧边栏#help的点击事件
+    //点击shopbag打开购物车页面
+    $("#help .shopbag").click(function() {
+        window.open("html/shopbag.html");
+    })
+
+    //点击top返回顶部
+    $("#help .toTop").click(function() {
+        $("body,html").animate({scrollTop:0},1000)
+    })
 })

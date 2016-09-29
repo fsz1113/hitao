@@ -1,123 +1,3 @@
-#container{
-  width : $bgwidth;
-  @include bgheight(20000px);
-  @include bgcolor(#ccc);
-  margin:0 auto;
-}
-
-#header{
-  width : $bgwidth;
-  @include bgheight(38px);
-  background: #fff url("../images/index/header-bgimg.jpg") no-repeat;
-}
-
-#header ul{
-  overflow: hidden;
-  float: right;
-  margin-top: 15px;
-  li{
-    float: left;
-    padding:0 15px;
-    border-right: 1px solid #956695;
-    img{
-      vertical-align: middle;
-      margin-right: 5px;
-    }
-    &.first,&.last{
-      border:none;
-    }
-    a{
-      color:#666666;
-      &.last{
-        color:#e10482;
-      }
-      &:hover{
-        color:#e10482;
-      }
-    }
-  }
-}
-
-#nav{
-  @include bgheight(106px);
-  border-bottom: 2px solid #000;
-  background: #fff url("../images/index/nav-bgimg.jpg") no-repeat;
-  position: relative;
-}
-
-#nav .top{
-  @include bgwidth(365px);
-  @include bgheight(45px);
-  padding-top: 5px;
-  float: right;
-  ul{
-    margin-top: 5px;
-    overflow: hidden;
-    li{
-      float: left;
-      padding: 0 5px;
-      img{
-        vertical-align: middle;
-        margin-right: 10px;
-      }
-    }
-    li a{
-      color: #000;
-    }
-  }
-}
-
-#nav .middle{
-  position: absolute;
-  right:0;
-  top:55px;
-  border:2px solid #e10482;
-  @include bgwidth(300px);
-  @include bgheight(30px);
-  input{
-    border:none;
-    float: left;
-    @include bgheight(30px);
-    @include bgwidth(240px);
-    padding-left: 10px;
-  }
-  button{
-    border:none;
-    float: left;
-    background-color: #e10482;
-    @include bgheight(30px);
-    @include bgwidth(50px);
-    color: #fff;
-  }
-}
-
-#nav .bottom{
-  position: absolute;
-  bottom:0;
-  left:0;
-  @include bgwidth(670px);
-  @include bgheight(50px);
-}
-
-#nav .bottom{
-  ul{
-    overflow: hidden;
-    li{
-      float: left;
-      font-size: 15px;
-      padding: 16px 25px;
-      &:hover{
-        border-bottom: 4px solid #e1007d;
-        color: #e1007d;
-        cursor: pointer;
-      }
-      img{
-        vertical-align: sub;
-        margin-right: 5px;
-      }
-    }
-  }
-}
 
 #hot{
   @include bgheight(300px);
@@ -166,12 +46,13 @@
       display: block;
       float: left;
       margin-right: 5px;
+      cursor: pointer;
       @include bgwidth(10px);
       @include bgheight(10px);
       border:4px solid #fff;
       border-radius: 50%;
       opacity: 0.7;
-      filter: alpha(opacity=70%);
+      filter: alpha(opacity=70);
       &.active{
         background-color: #fff;
       }
@@ -395,3 +276,85 @@
    }
  }
 }
+
+#third-floor{
+  @include bgheight(950px);
+  @include bgcolor(#f5f5f5);
+  padding-left: 15px;
+  position: relative;
+  h1{
+    line-height:135px;
+  }
+  div{
+    float: left;
+    @include bgwidth(400px);
+    @include bgheight(auto);
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .no5{
+    @include bgwidth(271px);
+    position: absolute;
+    right:0;
+  }
+  dl{
+    text-align: center;
+  }
+  .no1,.no2,.no3,.no4,.no5{
+    span{
+      color:#ce007c;
+      line-height: 20px;
+    }
+    .dd1{
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+  }
+}
+
+#fourth-floor{
+  @include bgheight(625px);
+  @include bgcolor(#f5f5f5);
+  padding-left: 15px;
+  position: relative;
+  img{
+    display: block;
+  }
+  h1{
+    line-height: 135px;
+  }
+  .no1{
+    @include bgwidth(290px);
+    @include bgheight(450px);
+    position: absolute;
+    right:15px;
+  }
+  .cle{
+    clear: left;
+  }
+  dl{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    img{
+      @include bgwidth(210px);
+      @include bgheight(160px);
+    }
+    dd{
+      line-height:25px;
+    }
+    .dd2{
+      color:#e10583;
+      span{
+        color:#a0b4d2;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+
