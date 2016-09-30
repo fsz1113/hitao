@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>嗨淘全球-注册</title>
-    <link rel="stylesheet" type="text/css" href="../css/register.css"/>
+    <title>嗨淘全球-登陆</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
     <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="../css/common.css"/>
     <script src="../Javascript/jquery-1.8.3.js"></script>
     <script src="../Javascript/cookie.js"></script>
-    <script src="../Javascript/register.js"></script>
+    <script src="../Javascript/login.js"></script>
 </head>
 <body>
 <div id="container">
@@ -16,37 +16,42 @@
     <div id="nav"></div>
     <div id="join">
         <div class="welcome">欢迎注册加入<br/>嗨淘全球</div>
-        <div class="already">已是嗨淘全球会员？ <span><a href="login.html">去登陆</a></span></div>
+        <div class="already">还不是嗨淘全球会员？ <span><a href="register.html">去注册</a></span></div>
     </div>
-    <div id="register">
-        <div class="confirm">
-            <div class="code">
-                <div class="left">验证码</div>
-                <input class="txt" placeholder="请输入右侧的验证码"/>
-                <div class="right"></div>
-            </div>
-            <div class="validation  ">
-                <div class="nickname">
-                    <div class="left">昵称</div>
-                    <input placeholder="请输入您的昵称(6到18位)"/>
-                </div>
-                <span>&nbsp;</span>
-                <div class="psd">
-                    <div class="left">密码</div>
-                    <input type="password" placeholder="请输入您的密码(6到18位)"/>
-                </div>
-                <div class="secondpsd">
-                    <div class="left">确认密码</div>
-                    <input type="password" placeholder="请重新输入您的密码"/>
-                </div>
-                <span>&nbsp;</span>
-                <div class="insure">
-                    <input type="checkbox"/>
-                    我已阅读并同意 <a href="#">《嗨淘会员注册协议》</a>
-                </div>
-            </div>
-            <input type="button" class="button" value="下一步"/>
+    <div id="login">
+        <div class="top">
+            <ul>
+                <li class="active">账号登陆</li>
+                <li>验证码登陆</li>
+            </ul>
         </div>
+        <div class="account">
+            <div class="name">
+                <div>账号</div>
+                <input placeholder="请输入您的账号"/>
+            </div>
+            <span>&nbsp;</span>
+            <div class="psd">
+                <div>密码</div>
+                <input type="password" placeholder="请输入密码"/>
+            </div>
+            <span>&nbsp;</span>
+            <div class="forget"><a href="#">忘记密码?</a></div>
+        </div>
+        <div class="QRcode">
+            <div class="name">
+                <div>账号</div>
+                <input placeholder="请输入您的账号"/>
+            </div>
+            <span>&nbsp;</span>
+            <div class="code">
+                <div>验证码</div>
+                <input placeholder="请输入验证码"/>
+                <div class="pic"></div>
+            </div>
+            <span>&nbsp;</span>
+        </div>
+        <button>登陆</button>
     </div>
     <div id="footer">
         <ul>

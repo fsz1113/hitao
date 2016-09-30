@@ -38,7 +38,7 @@
   @include bgheight(635px);
   position: relative;
   border-bottom: 1px solid #cccccc;
-  background: #ffffff url("../images/register/register-bgimg.jpg") no-repeat 240px 70px;
+  background: #ffffff url("../images/register/register-bgimg.jpg") no-repeat 0px 70px;
   .confirm{
     @include bgheight(250px);
     @include bgwidth(340px);
@@ -83,7 +83,7 @@
   }
   .confirm .button{
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left:127px;
     @include bgwidth(108px);
     @include bgheight(40px);
@@ -141,5 +141,20 @@
   }
   .wrongSpan{
     color: #ed0e8d;
+  }
+  .insure{
+    color:#666666;
+    a{
+      color: #3b99fd;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    input{
+      @include bgwidth(13px);
+      @include bgheight(13px);
+      float: left;
+      margin-right: 10px;
+    }
   }
 }

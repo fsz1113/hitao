@@ -132,7 +132,12 @@ $(function() {
         $("body,html").animate({"scrollTop" : 10490},4500)
     })
     $("#nav .bottom").children().eq(0).children().eq(5).on("mouseenter mouseleave",function() {
-        $("#nav .code").fadeToggle();
+        $("#nav .code").stop().fadeToggle();
+    })
+
+    //.code鼠标移上显示，离开消失
+    $("#nav .code").bind("mouseenter mouseleave",function() {
+        $(this).stop().fadeToggle();
     })
 
 
@@ -163,7 +168,7 @@ $(function() {
     //侧边栏#help的点击事件
     //点击shopbag打开购物车页面
     $("#help .shopbag").click(function() {
-        window.open("html/shopbag.html");
+        window.open("html/shoppingbag.html","_self");
     })
 
     //点击top返回顶部

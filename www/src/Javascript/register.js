@@ -32,6 +32,19 @@ $(function() {
         return randomCode;
     }
 
+
+    //使用定时器，每100毫秒检测一次输入框是否为空来改变按钮状态
+    setInterval(function(){
+        if($("#register .txt").val() == ""){
+            $("#register .button").css("background","#999999");
+            $("#register .button").css("cursor","not-allowed");
+        }else{
+            $("#register .button").css("background","#e10482");
+            $("#register .button").css("cursor","pointer");
+            $("#register .button").attr("disabled",false);
+        }
+    },100)
+
     //当input文本框中有内容时，button可以点击，点击按钮的时候进行判断
     //内容相同进行注册，不相同提示不同并且禁止下一步操作
     //因为input属于表单元素，所以获取内容用val()
@@ -52,6 +65,7 @@ $(function() {
                 $("#register .code").hide();
                 $("#register .validation").show();
                 $("#register .button").val("注册");
+                $("#register .button").css("bottom","-40px");
             }
         }
     })
@@ -73,6 +87,7 @@ $(function() {
         confirmPassword();
     })
 
+
     //判断用户名是否合格
     function isNickname() {
         var regnickname = /^\w{6,18}$/;
@@ -81,7 +96,7 @@ $(function() {
             $("#register .validation span").eq(0).html("请输入昵称").addClass("wrongSpan");
         }else if(!regnickname.test(nickname)){
             $("#register .validation span").eq(0).html("昵称格式不正确").addClass("wrongSpan");
-        }else if(regnickname.test(nickname) && $.cookie(nickname) != null){
+        }else if(regnickname.test(nickname) && $.cookie.getAll(nickname).password != undefined){
             $("#register .validation span").eq(0).html("昵称已存在，换一个吧").addClass("wrongSpan");
         }else{
             $("#register .validation span").eq(0).html("昵称符合标准").removeClass().addClass("rightSpan");
@@ -114,15 +129,28 @@ $(function() {
         }
     };
 
-    //设置注册按钮的单机事件
+    //设置注册按钮的单击事件
     $("#register .button").click(function() {
-        if($("#register .validation span").eq(1).html() == "填写资料成功"){
+        if($("#register .validation span").eq(1).html() == "填写资料成功" && $("#register .insure input").is(":checked")){
+            //将用户名和密码存入cookie
+            $.cookie.setAll($("#register .validation input").eq(0).val(),
+                {password : $("#register .validation input").eq(2).val()}
+            );
             //回到主页
             window.open("../index.html","_self");
-            //将用户名和密码存入cookie
-            $.cookie($("#register .validation input").eq(0).val(),{
-                password : $("#register .validation input").eq(2).val()
-            },15)
         }
     });
+
+    //侧边栏#help的点击事件
+    //点击shopbag打开购物车页面
+    $("#help .shopbag").click(function() {
+        window.open("shoppingbag.html","_self");
+    })
+
+    //点击top返回顶部
+    $("#help .toTop").click(function() {
+        $("body,html").animate({scrollTop:0},1000)
+    })
+
+
 });

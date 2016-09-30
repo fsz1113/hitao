@@ -38,7 +38,7 @@
   height: 635px;
   position: relative;
   border-bottom: 1px solid #cccccc;
-  background: #ffffff url("../images/register/register-bgimg.jpg") no-repeat 240px 70px;
+  background: #ffffff url("../images/register/register-bgimg.jpg") no-repeat 0px 70px;
 }
 #register .confirm {
   height: 250px;
@@ -84,7 +84,7 @@
 }
 #register .confirm .button {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 127px;
   width: 108px;
   height: 40px;
@@ -140,6 +140,21 @@
 }
 #register .validation .wrongSpan {
   color: #ed0e8d;
+}
+#register .validation .insure {
+  color: #666666;
+}
+#register .validation .insure a {
+  color: #3b99fd;
+}
+#register .validation .insure a:hover {
+  text-decoration: underline;
+}
+#register .validation .insure input {
+  width: 13px;
+  height: 13px;
+  float: left;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=register.css.map */
