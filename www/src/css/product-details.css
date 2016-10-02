@@ -1,0 +1,199 @@
+#details {
+  width: 990px;
+  height: 570px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+#details .location {
+  color: #999999;
+  line-height: 70px;
+}
+#details .location a {
+  color: #666666;
+}
+#details .location a:hover {
+  color: #e10482;
+}
+
+#details .photo {
+  position: relative;
+  width: 585px;
+  height: 500px;
+  float: left;
+}
+#details .photo .smallpic {
+  position: relative;
+  width: 580px;
+  height: 360px;
+}
+#details .photo .smallpic .glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 116px;
+  height: 72px;
+  background-color: #ccc;
+  cursor: move;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  display: none;
+}
+#details .photo img {
+  vertical-align: middle;
+}
+#details .photo .span1 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+#details .photo ul {
+  margin-top: 15px;
+  height: 20px;
+}
+#details .photo ul li {
+  float: left;
+  font-weight: 700;
+  margin-right: 12px;
+}
+#details .photo ul li .li2, #details .photo ul li .li3, #details .photo ul li .li4 {
+  display: block;
+  width: 18px;
+  height: 15px;
+  background-image: url(../images/product-details/details-bg.jpg);
+}
+#details .photo ul li .li3 {
+  background-position: 0 30px;
+}
+#details .photo ul li .li4 {
+  background-position: 0 15px;
+}
+#details .mirror {
+  width: 580px;
+  height: 360px;
+  overflow: hidden;
+  position: absolute;
+  top: 65px;
+  right: -580px;
+  display: none;
+}
+#details .mirror img {
+  position: absolute;
+}
+
+#details .literal {
+  width: 405px;
+  height: 500px;
+  float: left;
+}
+
+#details .literal hr {
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#details .literal .count {
+  width: 257px;
+  height: 50px;
+  background-color: #f5f5f5;
+  margin-left: 148px;
+  margin-bottom: 20px;
+  border-radius: 10px 0 0 10px;
+  font-weight: 900;
+  line-height: 50px;
+}
+#details .literal .count img {
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+#details .literal .count span {
+  font-size: 22px;
+}
+#details .literal p.describe {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+#details .literal .price {
+  margin-left: 20px;
+}
+#details .literal .price .present {
+  font-size: 23px;
+  color: #e10482;
+}
+#details .literal .price .present span {
+  font-size: 40px;
+}
+#details .literal .price .discount {
+  display: inline-block;
+  width: 44px;
+  height: 20px;
+  background-color: #e10482;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+#details .literal .price .former {
+  color: #999999;
+  text-decoration: line-through;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#details .literal .amount {
+  margin-left: 20px;
+}
+#details .literal .amount .addtocar {
+  width: 108px;
+  height: 28px;
+  margin-left: 50px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+#details .literal .amount .addtocar button {
+  width: 29px;
+  height: 28px;
+  background-color: #fff;
+  color: #686868;
+  border: none;
+  float: left;
+}
+#details .literal .amount .addtocar input {
+  height: 28px;
+  width: 48px;
+  border: none;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  float: left;
+  text-align: center;
+}
+#details .literal .amount .bottom button {
+  width: 140px;
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+}
+#details .literal .amount .bottom button img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+#details .literal .amount .bottom button.buy {
+  background-color: #000;
+}
+#details .literal .amount .bottom button.add {
+  background-color: #e10482;
+}
+
+/*# sourceMappingURL=product-details.css.map */

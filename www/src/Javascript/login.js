@@ -131,8 +131,6 @@ $(function() {
             $("#login input").eq(4).val("");
             window.open("../index.html","_self");
         }
-
-
     })
 
     function input0(obj){
@@ -186,4 +184,5 @@ $(function() {
         $("body,html").animate({scrollTop:0},1000)
     })
 
+    console.log($.cookie.getAll("new20160110"))
 })
