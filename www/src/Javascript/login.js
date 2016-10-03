@@ -32,6 +32,8 @@ $(function() {
         $(this).html("");
         //调用生成验证码函数
         $(this).html(getCode());
+        //文本输入框清空
+        $(".code input").eq(0).val("");
     })
 
     //得到验证码函数
@@ -184,5 +186,4 @@ $(function() {
         $("body,html").animate({scrollTop:0},1000)
     })
 
-    console.log($.cookie.getAll("new20160110"))
 })

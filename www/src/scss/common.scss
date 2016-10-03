@@ -4,7 +4,7 @@
 #container{
   width : $bgwidth;
   @include bgheight(auto);
-  @include bgcolor(#ccc);
+  @include bgcolor(#fff);
   margin:0 auto;
 }
 
@@ -112,6 +112,9 @@
         border-bottom: 4px solid #e1007d;
         color: #e1007d;
         cursor: pointer;
+      }
+      a{
+        color: #000;
       }
       img{
         vertical-align: sub;

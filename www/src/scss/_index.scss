@@ -357,4 +357,62 @@
   }
 }
 
+#help{
+  .contact:hover{
+    cursor: pointer;
+  }
+  .shower{
+    display: none;
+    position: absolute;
+    top:155px;
+    right:35px;
+    @include bgwidth(123px);
+    @include bgheight(95px);
+    @include bgcolor(#fff);
+    border:1px solid #cccccc;
+    border-bottom:none;
+    border-right:none;
+    padding-left: 11px;
+    padding-top: 23px;
+  }
+  .shower button{
+    @include bgwidth(98px);
+    @include bgheight(23px);
+    background: url(../images/index/shower-conbg.jpg) repeat;
+    border:1px solid #a2cae0;
+    color: #448bb2;
+    padding-left: 5px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+    img{
+      vertical-align: middle;
+    }
+  }
+}
+
+#help .knowmore{
+  display: none;
+  position: absolute;
+  top:20px;
+  right:1000px;
+  @include bgwidth(414px);
+  @include bgheight(503px);
+  @include bgcolor(red);
+  background: #fff url(../images/index/knowmore-bg.jpg) no-repeat 85px 100px;
+  border:1px solid #000;
+  .drag{
+    @include bgheight(40px);
+    color: #fff;
+    @include bgcolor(#ef81c0);
+    text-align: center;
+    line-height:40px;
+    cursor: move;
+  }
+  .drag .cross{
+    float: right;
+    margin-right:10px;
+    cursor: pointer;
+  }
+}
+
 

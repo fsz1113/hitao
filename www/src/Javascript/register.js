@@ -16,6 +16,8 @@ $(function() {
         $(this).html("");
         //调用生成验证码函数
         $(this).html(getCode());
+        //文本框清空
+        $(".txt").val("");
     })
 
     //得到验证码函数
@@ -133,8 +135,10 @@ $(function() {
     $("#register .button").click(function() {
         if($("#register .validation span").eq(1).html() == "填写资料成功" && $("#register .insure input").is(":checked")){
             //将用户名和密码存入cookie
+            //第四个参数/表明cookie可以跨域求情
             $.cookie.setAll($("#register .validation input").eq(0).val(),
-                {password : $("#register .validation input").eq(2).val()}
+                {password : $("#register .validation input").eq(2).val()},
+                "/"
             );
             //回到主页
             window.open("../index.html","_self");

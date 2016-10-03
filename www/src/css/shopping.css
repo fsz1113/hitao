@@ -1,0 +1,63 @@
+#cart {
+  height: 500px;
+  width: 1107px;
+  padding-left: 115px;
+  padding-top: 20px;
+  border-bottom: 1px solid #000;
+}
+
+#hot-recom {
+  height: 320px;
+  padding-left: 115px;
+  padding-right: 115px;
+  border-bottom: 1px solid #cccccc;
+}
+#hot-recom p {
+  text-indent: 2em;
+  line-height: 26px;
+  font-weight: 700;
+}
+#hot-recom dl {
+  float: left;
+  height: 290px;
+  width: 190px;
+  margin-right: 9px;
+}
+#hot-recom dl.last {
+  margin-right: 0;
+}
+#hot-recom dl dt {
+  margin-bottom: 10px;
+}
+#hot-recom dl dd {
+  color: #e10482;
+  line-height: 27px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+#hot-recom dl dd.dd1 {
+  height: 40px;
+  line-height: 17px;
+  color: #000;
+}
+#hot-recom dl dd span {
+  display: block;
+  height: 33px;
+  width: 104px;
+  border: 1px solid #e10482;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 33px;
+  margin-top: 5px;
+}
+#hot-recom dl dd span a {
+  color: #e10482;
+}
+#hot-recom dl dd span:hover {
+  background-color: #e10482;
+}
+#hot-recom dl dd span:hover a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=shopping.css.map */

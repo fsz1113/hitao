@@ -14,7 +14,7 @@
         };
 
         // 设置单值cookie
-        this.set = function(name, value, expires, path, domain, secure) {
+        this.set = function(name, value, path, expires, domain, secure) {
             var cookieText = encodeURIComponent(name) + "=" + encodeURIComponent(value);
             // 设置默认过期时间为七天
             if(expires == undefined) {
@@ -39,7 +39,7 @@
 
         // 清除单值cookie
         this.unset = function(name, path, domain, secure) {
-            this.set(name, '', new Date(0), path, domain, secure );
+            this.set(name, '', new Date(0), path, domain, secure );decodeURIComponent
         };
 
         // 设置多值cookie
@@ -55,6 +55,7 @@
         // 获取多值cookie
         this.getAll = function(name) {
             var obj = {};
+            //console.log(decodeURIComponent(this.get(name)))
             var arr = this.get(name).split('&');
             for(var i = 0, len = arr.length; i < len; i++) {
                 var tmpArr = arr[i].split(':');

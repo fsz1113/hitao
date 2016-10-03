@@ -2,7 +2,8 @@
   @include bgwidth(990px);
   @include bgheight(570px);
   @include bgcolor(#ffffff);
-  margin:0 auto;
+  padding-left: 115px;
+  padding-right: 115px;
 }
 
 #details{
@@ -101,6 +102,7 @@
     color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   .count{
     @include bgwidth(257px);
@@ -185,16 +187,17 @@
     }
   }
   .amount .bottom button{
-    @include bgwidth(140px);
+    @include bgwidth(170px);
     @include bgheight(40px);
     margin-right: 20px;
     margin-top: 20px;
     border:none;
-    border-radius: 10px;
+    border-radius: 20px;
     float: left;
     text-align: center;
     line-height:40px;
     color: #ffffff;
+    font-size: 18px;
     img{
       vertical-align: middle;
       margin-right: 8px;
@@ -204,6 +207,231 @@
     }
     &.add{
       @include bgcolor(#e10482);
+    }
+  }
+}
+
+#content{
+  @include bgheight(auto);
+  @include bgwidth(990px);
+  overflow: hidden;
+  padding:30px 115px 20px 115px;
+}
+
+#content .left{
+  @include bgwidth(240px);
+  @include bgheight(auto);
+  float: left;
+  h2{
+    line-height:25px;
+  }
+}
+
+#content .left{
+  .guess{
+    @include bgcolor(#fff);
+  }
+  dl{
+    @include bgwidth(200px);
+    @include bgheight(85px);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #eeeeee;
+    a{
+      color: #000;
+      &:hover{
+        color: #e10482;
+      }
+    }
+    dt{
+      float: left;
+      margin-right: 12px;
+    }
+    dd{
+      float: left;
+      @include bgwidth(120px);
+      line-height:19px;
+      &.dd2{
+        color: #e10482;
+        margin-top: 15px;
+      }
+      span{
+        display: inline-block;
+        font-size: 12px;
+        margin-left: 7px;
+        @include bgcolor(#e10482);
+        @include bgwidth(36px);
+        @include bgheight(14px);
+        border-radius: 5px;
+        line-height:14px;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#content .left .recommand{
+  margin-top: 30px;
+  @include bgcolor(#fff);
+}
+
+#content .right{
+  float: left;
+  margin-left: 30px;
+  position: relative;
+  @include bgheight(5150px);
+  ul.select{
+    @include bgwidth(720px);
+    @include bgheight(30px);
+    border-bottom:2px solid #000;
+    li{
+      float: left;
+      @include bgwidth(64px);
+      margin-left: 50px;
+      font-size: 15px;
+      line-height:28px;
+      &.hover,&:hover{
+        color: #e1007d;
+        border-bottom: 4px solid #e1007d;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#content .right .para{
+  position: absolute;
+  left:0;
+  top:32px;
+  @include bgheight(55px);
+  @include bgcolor(#fff);
+  padding-top: 10px;
+  ul{
+    padding-left: 10px;
+    overflow: hidden;
+    img{
+      @include bgheight(40px);
+      @include bgwidth(40px);
+      margin-right: 7px;
+      vertical-align: sub;
+    }
+    li{
+      float: left;
+      @include bgwidth(auto);
+      p{
+        display: inline-block;
+        line-height:20px;
+        color: #4c404e;
+        font-size: 9px;
+      }
+    }
+  }
+}
+
+#content .right .productpara{
+  @include bgheight(335px);
+  @include bgwidth(690px);
+  @include bgcolor(red);
+  background: #fff url(../images/product-details/productpara.jpg) no-repeat right 65px;
+  padding-top: 25px;
+  padding-left: 30px;
+  ul{
+    border-left:6px solid #e10482;
+    margin-bottom:30px;
+  }
+  ul li{
+    font-size: 22px;
+    color: #333333;
+  }
+  p{
+    color: #333333;
+    margin-left: 20px;
+    line-height:30px;
+    span{
+      color: #9999a5;
+      text-align: right;
+      display: inline-block;
+      @include bgwidth(65px);
+    }
+  }
+}
+
+#content .right .certi{
+  @include bgwidth(695px);
+  @include bgheight(640px);
+  background: #fff url(../images/product-details/productpara-certi-bg.jpg) repeat;
+  padding-left: 25px;
+  padding-top: 20px;
+  ul{
+    border-left:6px solid #e10482;
+    margin-bottom:45px;
+  }
+  ul li{
+    font-size: 22px;
+    color: #333333;
+  }
+  h1{
+    text-align: center;
+    line-height:80px;
+  }
+}
+
+#content .right .dangdang{
+  @include bgheight(610px);
+  @include bgwidth(720px);
+  background: #fff url(../images/product-details/dangdang.jpg) no-repeat 0 66px;
+  h1{
+    text-align: center;
+    line-height:67px;
+  }
+}
+
+#content .right .story{
+  @include bgheight(445px);
+  @include bgwidth(590px);
+  @include bgcolor(#edeef0);
+  padding-left: 70px;
+  padding-top: 50px;
+  padding-right: 60px;
+  border-bottom : 3px solid #fff;
+  h1,h2{
+    line-height:58px;
+  }
+  p{
+    font-size: 17px;
+    line-height:22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+}
+
+#content .right .comment{
+  display: none;
+  position: absolute;
+  top:32px;
+  left:0;
+  @include bgwidth(620px);
+  @include bgcolor(#fff);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#content .right .comment dl{
+  @include bgwidth(620px);
+  @include bgheight(110px);
+  border-bottom:1px solid #eeeeee;
+  padding-top: 30px;
+  dt{
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+  }
+  dd{
+    line-height: 24px;
+    span{
+      color:#999999;
     }
   }
 }

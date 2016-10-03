@@ -166,6 +166,29 @@ $(function() {
     })
 
     //侧边栏#help的点击事件
+
+    //.contact以及.shower鼠标移上移出对shower的影响
+    $(document).on("mouseenter","#help .contact,#help .shower",function() {
+        $("#help .shower").stop().fadeIn("slow");
+        $("#help .shower p").css({"color" : "#000" , "margin" : 0 , "line-height" : "24px"});
+    })
+    $(document).on("mouseleave","#help .contact,#help .shower",function() {
+        $("#help .shower").stop().fadeOut("slow");
+    })
+
+    //button点击出现.learnmore
+    $("#help .shower button").eq(0).click(function() {
+        $("#help .knowmore").show();
+    })
+
+    //点击X，.learnmore消失
+    $("#help .cross").click(function() {
+        $("#help .knowmore").hide();
+    })
+
+    //.drag的拖拽事件
+
+
     //点击shopbag打开购物车页面
     $("#help .shopbag").click(function() {
         window.open("html/shoppingbag.html","_self");

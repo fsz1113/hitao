@@ -2,7 +2,8 @@
   width: 990px;
   height: 570px;
   background-color: #ffffff;
-  margin: 0 auto;
+  padding-left: 115px;
+  padding-right: 115px;
 }
 
 #details .location {
@@ -92,6 +93,7 @@
   color: #000000;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 #details .literal .count {
   width: 257px;
@@ -174,16 +176,17 @@
   text-align: center;
 }
 #details .literal .amount .bottom button {
-  width: 140px;
+  width: 170px;
   height: 40px;
   margin-right: 20px;
   margin-top: 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   float: left;
   text-align: center;
   line-height: 40px;
   color: #ffffff;
+  font-size: 18px;
 }
 #details .literal .amount .bottom button img {
   vertical-align: middle;
@@ -194,6 +197,229 @@
 }
 #details .literal .amount .bottom button.add {
   background-color: #e10482;
+}
+
+#content {
+  height: auto;
+  width: 990px;
+  overflow: hidden;
+  padding: 30px 115px 20px 115px;
+}
+
+#content .left {
+  width: 240px;
+  height: auto;
+  float: left;
+}
+#content .left h2 {
+  line-height: 25px;
+}
+
+#content .left .guess {
+  background-color: #fff;
+}
+#content .left dl {
+  width: 200px;
+  height: 85px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+#content .left dl a {
+  color: #000;
+}
+#content .left dl a:hover {
+  color: #e10482;
+}
+#content .left dl dt {
+  float: left;
+  margin-right: 12px;
+}
+#content .left dl dd {
+  float: left;
+  width: 120px;
+  line-height: 19px;
+}
+#content .left dl dd.dd2 {
+  color: #e10482;
+  margin-top: 15px;
+}
+#content .left dl dd span {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 7px;
+  background-color: #e10482;
+  width: 36px;
+  height: 14px;
+  border-radius: 5px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+#content .left .recommand {
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+#content .right {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+  height: 5150px;
+}
+#content .right ul.select {
+  width: 720px;
+  height: 30px;
+  border-bottom: 2px solid #000;
+}
+#content .right ul.select li {
+  float: left;
+  width: 64px;
+  margin-left: 50px;
+  font-size: 15px;
+  line-height: 28px;
+}
+#content .right ul.select li.hover, #content .right ul.select li:hover {
+  color: #e1007d;
+  border-bottom: 4px solid #e1007d;
+  cursor: pointer;
+}
+
+#content .right .para {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  height: 55px;
+  background-color: #fff;
+  padding-top: 10px;
+}
+#content .right .para ul {
+  padding-left: 10px;
+  overflow: hidden;
+}
+#content .right .para ul img {
+  height: 40px;
+  width: 40px;
+  margin-right: 7px;
+  vertical-align: sub;
+}
+#content .right .para ul li {
+  float: left;
+  width: auto;
+}
+#content .right .para ul li p {
+  display: inline-block;
+  line-height: 20px;
+  color: #4c404e;
+  font-size: 9px;
+}
+
+#content .right .productpara {
+  height: 335px;
+  width: 690px;
+  background-color: red;
+  background: #fff url(../images/product-details/productpara.jpg) no-repeat right 65px;
+  padding-top: 25px;
+  padding-left: 30px;
+}
+#content .right .productpara ul {
+  border-left: 6px solid #e10482;
+  margin-bottom: 30px;
+}
+#content .right .productpara ul li {
+  font-size: 22px;
+  color: #333333;
+}
+#content .right .productpara p {
+  color: #333333;
+  margin-left: 20px;
+  line-height: 30px;
+}
+#content .right .productpara p span {
+  color: #9999a5;
+  text-align: right;
+  display: inline-block;
+  width: 65px;
+}
+
+#content .right .certi {
+  width: 695px;
+  height: 640px;
+  background: #fff url(../images/product-details/productpara-certi-bg.jpg) repeat;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+#content .right .certi ul {
+  border-left: 6px solid #e10482;
+  margin-bottom: 45px;
+}
+#content .right .certi ul li {
+  font-size: 22px;
+  color: #333333;
+}
+#content .right .certi h1 {
+  text-align: center;
+  line-height: 80px;
+}
+
+#content .right .dangdang {
+  height: 610px;
+  width: 720px;
+  background: #fff url(../images/product-details/dangdang.jpg) no-repeat 0 66px;
+}
+#content .right .dangdang h1 {
+  text-align: center;
+  line-height: 67px;
+}
+
+#content .right .story {
+  height: 445px;
+  width: 590px;
+  background-color: #edeef0;
+  padding-left: 70px;
+  padding-top: 50px;
+  padding-right: 60px;
+  border-bottom: 3px solid #fff;
+}
+#content .right .story h1, #content .right .story h2 {
+  line-height: 58px;
+}
+#content .right .story p {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+#content .right .comment {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 620px;
+  background-color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#content .right .comment dl {
+  width: 620px;
+  height: 110px;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 30px;
+}
+#content .right .comment dl dt {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+#content .right .comment dl dd {
+  line-height: 24px;
+}
+#content .right .comment dl dd span {
+  color: #999999;
 }
 
 /*# sourceMappingURL=product-details.css.map */

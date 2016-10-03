@@ -1,7 +1,7 @@
 #container {
   width: 1220px;
   height: auto;
-  background-color: #ccc;
+  background-color: #fff;
   margin: 0 auto;
 }
 
@@ -110,6 +110,9 @@
   border-bottom: 4px solid #e1007d;
   color: #e1007d;
   cursor: pointer;
+}
+#nav .bottom ul li a {
+  color: #000;
 }
 #nav .bottom ul li img {
   vertical-align: sub;
