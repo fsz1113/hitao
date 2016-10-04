@@ -5,6 +5,35 @@
 
 $(function() {
 
+    //模糊查询
+    var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+    ];
+    //$( "#nav form input").eq(0).autocomplete({
+    //    source: availableTags
+    //});
+
     //#hot轮播图
     var ulNode = $("#hot ul");
 
@@ -186,7 +215,64 @@ $(function() {
         $("#help .knowmore").hide();
     })
 
-    //.drag的拖拽事件
+
+  //    //获取初始位置鼠标距knowmore上方和左侧位置
+    //    //传入的event是mousedown时刻的event
+    //    this.initPosition = function(event) {
+    //        this.ele.toLeft = event.clientX - this.ele.offset().left;
+    //        this.ele.toTop = event.clientY - this.ele.offset().top;
+    //    };
+    //
+    //    //移动事件
+    //    //传入的event是mousemove事件下的event
+    //    this.move = function(event) {
+    //        //调用当下位置函数
+    //        this.currentPosition(event);
+    //    };
+    //
+    //    //当下位置
+    //    //传入的event是this.move中的event(也来自于mousemove事件)
+    //    this.currentPosition = function(event) {
+    //        this.ele.css("left",event.clientX - (event.clientX - this.ele.offset().left) + "px");
+    //        this.ele.css("top",event.clientY - (event.clientY - this.ele.offset().top) + "px");
+    //        this.border();
+    //    };
+    //    //边界判断
+    //    this.border = function() {
+    //        if(this.ele.offset().left <= 0){
+    //            this.ele.css("left",0);
+    //        };
+    //        if(this.ele.offset().left >= event.pageX - this.ele.width()){
+    //            this.ele.css("left",event.pageX - this.ele.width());
+    //        };
+    //        if(this.ele.offset().top <= 0){
+    //            this.ele.css("top",0);
+    //        };
+    //        if(this.ele.offset().top >= event.pageY - this.ele.height()){
+    //            this.ele.css("top",event.pageX - this.ele.height());
+    //        };
+    //        //调用失效事件
+    //        this.invalid();
+    //    };
+    //    this.invalid = function() {
+    //        Remove();
+    //    }
+    //
+    //    this.init();
+    //}
+    //
+    //function Remove() {
+    //    $(document).mouseup(function() {
+    //        $(document).mousedown(function() {
+    //            null;
+    //        })
+    //    })
+    //}
+
+
+
+
+
 
 
     //点击shopbag打开购物车页面

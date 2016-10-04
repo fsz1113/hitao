@@ -57,6 +57,31 @@ $(function() {
         $(".photo .glass").hide();
     })
 
+    //.literal .count span倒计时
+    //当下时间距离1970年1月1日8时的毫秒数
+    //先在页面加载时调用一次
+    changeNum();
+    //使用定时器，每秒改变一个
+    setInterval(function() {
+        changeNum();
+    },1000);
+    function changeNum() {
+        var now = new Date().getTime();
+        var deadline = new Date("10 15,2016 00:00:00").getTime();
+        var count = deadline - now;
+        var myDay = format(Math.floor(count / (3600 * 1000 * 24)));
+        var myHour = format(Math.floor((count - myDay * 3600 * 1000 * 24) / (3600 * 1000)));
+        var myMinute = format(Math.floor((count - myDay * 3600 * 1000 * 24 - myHour * 3600 * 1000) / (60 * 1000)));
+        var mySecond = format(Math.floor((count - myDay * 3600 * 1000 * 24 - myHour * 3600 * 1000 - myMinute * 60 * 1000) / 1000))
+        $(".literal .count span").html(myDay + "天" + myHour + "时" + myMinute + "分" + mySecond + "秒");
+    }
+    function format(num){
+        if(parseInt(num) < 10){
+            num = "0" + num;
+        }
+        return num;
+    }
+
     //#content的商品介绍和商品评论的Tab切换
     //li点击时的事件
     $("#content .select").children().click(function() {
@@ -90,6 +115,9 @@ $(function() {
     $("#details .addtocar button").eq(1).click(function() {
         var num = parseInt($("#details .addtocar input").eq(0).val());
         $("#details .addtocar input").eq(0).val(num + 1);
+        if($("#details .addtocar input").eq(0).val() > 20){
+            $("#details .addtocar input").eq(0).val(20);
+        }
     })
 
     //输入框失去焦点时也要判断值
@@ -119,8 +147,8 @@ $(function() {
     $("#details .add").click(function() {
         //获取商品图片路径
         var pSrc = $(".photo img").eq(1).attr("src");
-        //获取商品价格
-        var pPrice = $(".literal .price .present").text();
+        //获取商品价格(只有数字)
+        var pPrice = $(".literal .price .present").text().substring(1);
         //获取商品名称
         var pName = $(".photo span").text();
         //获取商品id
@@ -130,9 +158,8 @@ $(function() {
 
         //创建cookie
         //第三个参数"/"表明该cookie可以跨域请求
-        $.cookie.setAll(pId,{src : pSrc , name : pName , price : pPrice , count : pCount},"/");
+        $.cookie.setAll(pId,{id : pId , src : pSrc , name : pName , price : pPrice , count : pCount},"/");
     })
-
 
 
     //侧边栏#help的点击事件
@@ -145,4 +172,5 @@ $(function() {
     $("#help .toTop").click(function() {
         $("body,html").animate({scrollTop:0},1000)
     })
+
 })

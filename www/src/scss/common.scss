@@ -76,6 +76,9 @@
   border:2px solid #e10482;
   @include bgwidth(300px);
   @include bgheight(30px);
+  form{
+    @include bgheight(30px);
+  }
   input{
     border:none;
     float: left;

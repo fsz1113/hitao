@@ -35,8 +35,9 @@ $(function() {
     }
 
 
-    //使用定时器，每100毫秒检测一次输入框是否为空来改变按钮状态
-    setInterval(function(){
+    //输入框有内容时就改变按钮状态
+    //propertychange用于IE
+    $("#register .txt").bind("input propertychange", function() {
         if($("#register .txt").val() == ""){
             $("#register .button").css("background","#999999");
             $("#register .button").css("cursor","not-allowed");
@@ -45,7 +46,8 @@ $(function() {
             $("#register .button").css("cursor","pointer");
             $("#register .button").attr("disabled",false);
         }
-    },100)
+    })
+
 
     //当input文本框中有内容时，button可以点击，点击按钮的时候进行判断
     //内容相同进行注册，不相同提示不同并且禁止下一步操作
